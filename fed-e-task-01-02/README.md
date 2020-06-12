@@ -86,7 +86,7 @@ let ex3 = safeProp('name', user)
     .map(fp.first)
 console.log(ex3)
 
-12.
+4.
 
 let ex4 = n => Maybe.of(n)
     .map(parseInt)
