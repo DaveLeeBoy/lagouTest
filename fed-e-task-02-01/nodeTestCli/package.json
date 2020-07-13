@@ -1,0 +1,17 @@
+{
+  "name": "node-test-cli",
+  "version": "1.0.0",
+  "description": "测试脚手架",
+  "main": "index.js",
+  "bin": {
+    "test-cli": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^5.1.0"
+  }
+}
