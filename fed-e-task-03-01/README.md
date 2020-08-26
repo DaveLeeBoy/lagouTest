@@ -28,6 +28,31 @@
 ### 第一题
 
 ```
- 答: 
+ 答: /my-vue-router/src/vuerouter_history
 
+```
+### 第二题
+
+```
+ 答:   
+   // 处理 v-html 指令
+    htmlUpdater (node, value, key) {
+        node.innerHTML = value
+        new Watcher(this.vm, key, newValue => {
+            node.innerHTML = newValue
+        })
+    }
+    // 处理 v-on 指令
+    onUpdater (node, value, key, eventType) {
+        node.addEventListener(eventType, value)
+        new Watcher(this.vm, key, newValue => {
+            node.removeEventListener(eventType, value)
+            node.addEventListener(eventType, newValue)
+        })
+    }
+```
+### 第三题
+
+```
+ 答: snabbdom-demo 目录下
 ```
